@@ -1,0 +1,17 @@
+# 生长素响应通路关键基因线性关系图
+
+```mermaid
+graph TD
+    A[生长素] --> B[TIR1/AFB1]
+    B --> C[Aux/IAA蛋白降解<br>(IAA1、IAA3、IAA12)]
+    C --> D[ARF激活<br>(ARF5、ARF7、ARF19)]
+    D --> E[下游基因表达]
+    E --> F1[SAUR19<br>(细胞伸长)]
+    E --> F2[GH3.3<br>(生长素代谢调控)]
+    E --> F3[ANT<br>(器官发生)]
+    A --> G[运输蛋白<br>(PIN1、AUX1)]
+    G --> H[局部生长素浓度调控]
+    H --> B
+    A --> I[非经典信号通路<br>(TMK1)]
+    I --> J[细胞壁酸化/快速响应]
+    B -.SCF复合体组装.-> K[AXR1]
